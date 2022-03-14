@@ -1,0 +1,298 @@
+body{
+margin: 0;
+padding: 0;
+background: url("../img/teclado.jpg");
+background-size: cover;
+font-family: sans-serif;
+height: 100vh;
+    }
+/* Login */    
+.login-box{
+    width: 320px;
+    height: 460px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 92px 30px;
+    
+}
+.login-box .logobank{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: calc(40% - 45px);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;}
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.login-box input[type="number"],
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+ }
+
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ffff00;
+    color: #0000ff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Barra de navegacion */
+.navbar-brand {
+    font-size: 16px;
+    font-weight: bold;
+    color: steelblue !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* Cajero */
+.container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.jumbotron{
+    opacity: 0.97;
+    padding: 25px;
+}
+
+.cajero {
+    border-radius: 10px;
+    padding: 0px;    
+    margin-bottom: 7px;
+    background: lightsteelblue;
+    margin-top: 9px;
+    color: #1663be;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 7px;
+}
+
+.cajero .card-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-tecla {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: lightgray;
+    border-style: inset;
+    width: 70px;
+    height: 55px;
+    background: silver;
+    margin-bottom: 2px;
+    font-weight: bold;    
+    font-size: 20px;
+}
+
+.btn-inactivo {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: lightgray;
+    border-style: inset;
+    width: 70px;
+    height: 55px;      
+    background: silver;      
+    color: silver;
+    font-weight: bold;
+}
+
+.btn-tecla2 {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: lightgray;
+    border-style: inset;
+    width: 150px;
+    height: 55px;    
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.btn-anotacion {
+    border-radius: 10px;
+    border-width: 2px;    
+    border-color: lightgray;
+    background: #28a745;
+    color: #fff !important;
+    border-style: inset;
+    width: 150px;
+    height: 55px;    
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.btn-cancelar {
+    border-radius: 10px;
+    border-width: 2px;    
+    border-color: lightgray;
+    background: #dc3545;
+    color: #fff !important;
+    border-style: inset;
+    width: 150px;
+    height: 55px;    
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.btn-salir {
+    border-radius: 10px;
+    border-width: 2px;    
+    border-color: lightgray;
+    background: silver;
+    color: #dc3545 !important;
+    border-style: inset;
+    width: 150px;
+    height: 55px;    
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.disabled {
+    background: silver !important;      
+    color: silver !important;
+}
+
+.btn-warning{
+    color: white;
+    background: goldenrod;
+}
+
+.btn-opcion { 
+    border-radius: 10px; 
+    border-width: 2px; 
+    border-color: lightgray;
+    padding-top: 23px;
+    width: 158px; 
+    height: 70px; 
+    margin-top: 5px; 
+    font-weight: bold;
+    font-size: 16px;
+    background: steelblue; 
+    color: ghostwhite; 
+    align-items: center; 
+}
+
+.form-control{
+    text-align: center;
+}
+
+/* Historial de transacciones */
+.historial {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.historial .card {
+    opacity: 0.97;    
+    border-width: 15px;
+}
+
+.card-header {
+    font-weight:bold;
+    text-align:center;
+    font-size: 20px;
+    color: steelblue;
+}
+
+.historial .card-title {
+    padding-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.table {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.table td, .table th {
+    padding: 0.4rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.fecha{
+    text-align: left;
+}
+
+.concepto{
+    text-align: left;
+}
+
+.dinero{
+    text-align: right;
+}
+
+/* Date picker */
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 155px;
+}
+
+/* Gráfico */
+.grafico .card {
+    opacity: 0.95;    
+    border-width: 15px;
+}
+
+.grafico .row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
