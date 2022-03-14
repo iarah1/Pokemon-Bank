@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gráfico</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="cajero.html" class="logo d-flex align-items-center">
+        <img src="./img/logo2.png" alt="">
+        </a>
+        <a class="navbar-brand" href="cajero.html">Rebeca Rocío Pérez Borja
+        <br>CUENTA NÚMERO XXXXX-4477</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=cajero.html>Cajero</a></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historial.html">Historial de transacciones</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="grafico.html">Gráfico <span class="sr-only">(current)</span></a>
+                </li>                
+            </ul>
+            <span>
+            <a href="login.html" class="navbar-text">Salir</a>
+            <a href="login.html" class="logo">
+            <img src="./img/salir.png" alt="">
+            </a>
+            </span>             
+        </div>
+    </nav>
+
+    <!--Gráfico-->
+    <div class="container grafico">
+        <div class="card bg-light">
+            <div class="card-header">Gráfico</div>
+            <div class="card-body">
+                <div class="row">    
+                    <div class="col">
+                        <p class="card-text"><label for="fecha">Desde: </label>
+                        <input type="date" name="fecha" id="fecha"></p>
+                    </div>
+                    <div class="col pl-0">
+                        <p class="card-text"><label for="fecha">Hasta: </label>
+                        <input type="date" name="fecha" id="fecha"></p>
+                    </div>
+                    <div class="col pl-0">
+                        <button type="button" class="btn-secondary">Consultar</button>
+                    </div>     
+                </div>
+               <div class="row grafico">
+                <canvas id="myChart" style="width:100%;max-width:720px"></canvas> 
+               </div> 
+            </div> 
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script>
+    var xValues = ["Depósitos", "Retiros", "Pagos", "Saldo"];
+    var yValues = [1196.04, 555, 156.91, 1161.64];
+    var barColors = ["#28a745", "#dc3545","goldenrod","steelblue"];
+
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+             datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+        options: {
+            legend: {display: false},
+            title: {
+            display: true,
+            text: "Tipos de transacciones del 01-02-2022 al 28-02-2022"
+            }
+        }
+    });
+    </script>
+</body>
+    
+</html>
